@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css" />
+    <title>Calculadora</title>
+</head>
+
+<body>
+    <h1>Calculadora</h1>
+    <button class="resultado" id="ayuda" onclick="directory()">Mostrar / ocultar ayuda</button>
+    <div class="invisible" id="caja3">
+        <p><h3>Esta aplicación convierte un número periódico puro o mixto en fracción.</h3></p>
+        <p><h3>Introduce un número periódico con al menos 2 elementos del periodo.</h3></p>
+        <p><h3>Por ejemplo :</h3></p>
+        <p><h3>Número periódico : 5.123434343434.......</h3></p>
+        <p><h3>Número introducido : 5.1234     ❎</h3></p>
+        <p><h3>Número introducido : 5.123434   ✅</h3></p>
+        <p><h3>Y presiona el botón de Calcular ...</h3></p>
+    </div>
+    <div class="visible" id="caja1">
+        <input type="number" id="number" placeholder="Introduce un nº periódico"/>
+        <button class="resultado" id="btnresultado" onclick="main()">Calcular</button>
+        <button class="resultado" id="btnresultado" onclick="erase()">Borrar</button>
+        <div class="visible" id="caja2">
+            <div id="numerador"></div>
+            <div id="divi"><hr></div>
+            <div id="denominador"></div>
+        </div>
+    </div>
+    <h3 id="message"></h3>
+    <script src="script.js"></script>
+</body>
+
+</html>
