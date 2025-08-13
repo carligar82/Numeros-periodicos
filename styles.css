@@ -19,6 +19,7 @@ body{
 }
 #ayuda{
     width: 24%; 
+    height: 55px;
 }
 .invisible{
     display: none;
@@ -93,4 +94,5 @@ hr{
     height: 2px;
     background-color: black;
 }
+
 
